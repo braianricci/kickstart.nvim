@@ -1014,3 +1014,10 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+-- Make main background transparent
+vim.cmd [[hi Normal guibg=NONE ctermbg=NONE]]
+vim.cmd [[hi NormalNC guibg=NONE ctermbg=NONE]]
+
+-- Optional: floating windows
+vim.cmd [[hi NormalFloat guibg=NONE]]
+vim.cmd [[hi FloatBorder guibg=NONE]]
